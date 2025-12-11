@@ -18,4 +18,14 @@ class AppTextStyles {
     color:  Color(0xffffffff),
     fontWeight: FontWeight.w700
   );
+  static  TextStyle fontMedium16 = TextStyle(
+    fontSize: 16.sp,
+    color:  Color(0xffF17547),
+    fontWeight: FontWeight.w400
+  );
+  static  TextStyle font20 = TextStyle(
+    fontSize: 20.sp,
+    color:  Color(0xff000000),
+    fontWeight: FontWeight.w600
+  );
 }

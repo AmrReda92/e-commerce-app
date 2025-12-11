@@ -36,7 +36,6 @@ class CustomContainerListView extends StatelessWidget {
         return Padding(
           padding:  EdgeInsets.only(right: 19.w),
           child: Container(
-
             width: 285.w,
                 decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(23.r),

@@ -11,4 +11,5 @@ class AppColors {
   static const Color getNow1Background = Color(0xFFEFFF46);
   static const Color getNow2Background = Color(0xFF50D63B);
   static const Color getNow3Background = Colors.grey;
+  static const Color categoryBackground = Color(0x80D8D3D3);
 }

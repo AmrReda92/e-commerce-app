@@ -1,6 +1,7 @@
 import 'package:commerce_app/core/models/app_colors.dart';
 import 'package:commerce_app/core/models/app_images.dart';
 import 'package:commerce_app/core/models/app_text_styles.dart';
+import 'package:commerce_app/features/home/widgets/custom_container_list_view.dart';
 import 'package:commerce_app/features/home/widgets/custom_search_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -29,8 +30,17 @@ class HomeScreen extends StatelessWidget {
                     child: Text("Let’s start shopping!",style: AppTextStyles.font12,),
                   )),
               SizedBox(height: 14.h,),
-
-              
+              Padding(
+                padding:  EdgeInsets.symmetric(horizontal: 23.w),
+                child: Column(
+                  children: [
+                    SizedBox(
+                      height: 130.h,
+                      child: CustomContainerListView()
+                    ),
+                  ],
+                ),
+              )
             ],
           ),
         ),

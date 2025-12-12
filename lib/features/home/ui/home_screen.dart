@@ -4,6 +4,7 @@ import 'package:commerce_app/core/models/app_text_styles.dart';
 import 'package:commerce_app/features/home/widgets/custom_categry_list_view.dart';
 import 'package:commerce_app/features/home/widgets/custom_container_list_view.dart';
 import 'package:commerce_app/features/home/widgets/custom_search_field.dart';
+import 'package:commerce_app/features/home/widgets/product_list_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -54,7 +55,9 @@ class HomeScreen extends StatelessWidget {
                     SizedBox(
                       height: 62.h,
                       child: CustomCategoryListView(),
-                    )
+                    ),
+                    SizedBox(height: 33.45.h,),
+                    ProductListView()
                   ],
                 ),
               ),

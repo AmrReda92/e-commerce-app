@@ -6,4 +6,8 @@ class AppImages {
   static const String shoppingIcon = "assets/icons/shopping_icon.svg";
   static const String watchIcon = "assets/icons/watch_icon.svg";
   static const String clothIcon = "assets/icons/cloth_icon.svg";
+  static const String watchOne = "assets/images/watch_onee.png";
+  static const String watchTwo = "assets/images/watch_two.png";
+  static const String watchThree = "assets/images/watch_three.png";
+  static const String watchFour = "assets/images/watch_four.png";
 }

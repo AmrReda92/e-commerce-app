@@ -8,6 +8,11 @@ class AppTextStyles {
     color:  Color(0x80000000),
     fontWeight: FontWeight.w600
   );
+  static  TextStyle font10SemiBold = TextStyle(
+    fontSize: 10.sp,
+    color:   Color(0xBF000000),
+    fontWeight: FontWeight.w600
+  );
   static  TextStyle font12bold = TextStyle(
     fontSize: 12.sp,
     color:  Color(0xffF17547),
@@ -22,6 +27,11 @@ class AppTextStyles {
     fontSize: 16.sp,
     color:  Color(0xffF17547),
     fontWeight: FontWeight.w400
+  );
+  static  TextStyle fontExtraBold12 = TextStyle(
+    fontSize: 12.sp,
+    color:  Colors.black,
+    fontWeight: FontWeight.w800
   );
   static  TextStyle font20 = TextStyle(
     fontSize: 20.sp,

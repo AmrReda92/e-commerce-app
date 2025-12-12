@@ -28,6 +28,11 @@ class AppTextStyles {
     color:  Color(0xffF17547),
     fontWeight: FontWeight.w400
   );
+  static  TextStyle fontMedium14 = TextStyle(
+    fontSize: 14.sp,
+    color:  Color(0xBF000000),
+    fontWeight: FontWeight.w400
+  );
   static  TextStyle fontExtraBold12 = TextStyle(
     fontSize: 12.sp,
     color:  Colors.black,

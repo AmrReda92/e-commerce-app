@@ -13,5 +13,6 @@ class AppColors {
   static const Color getNow3Background = Colors.grey;
   static const Color categoryBackground = Color(0x80D8D3D3);
   static const Color productBackground = Color(0x80D8D3D3);
+  static const Color unselectedNavBar = Color(0xff878787);
 
 }

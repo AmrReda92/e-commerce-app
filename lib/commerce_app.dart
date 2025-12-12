@@ -1,3 +1,4 @@
+import 'package:commerce_app/features/bottom_nav_bar/ui/bottom_navigation_bar_screen.dart';
 import 'package:commerce_app/features/home/ui/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -16,7 +17,7 @@ class CommerceApp extends StatelessWidget {
         theme: ThemeData(
           fontFamily: "Inter"
         ),
-        home: HomeScreen(),
+        home: BottomNavigationBarScreen(),
       ),
     );
   }

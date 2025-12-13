@@ -1,6 +1,7 @@
 import 'package:commerce_app/core/models/app_colors.dart';
 import 'package:commerce_app/core/models/app_images.dart';
 import 'package:commerce_app/core/models/app_text_styles.dart';
+import 'package:commerce_app/features/home/model/info_category_model.dart';
 import 'package:commerce_app/features/home/widgets/custom_categry_list_view.dart';
 import 'package:commerce_app/features/home/widgets/custom_container_list_view.dart';
 import 'package:commerce_app/features/home/widgets/custom_search_field.dart';

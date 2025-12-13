@@ -1,3 +1,4 @@
+import 'package:commerce_app/features/home/model/info_category_model.dart';
 import 'package:commerce_app/features/home/model/info_container_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -8,30 +9,11 @@ class CustomContainerListView extends StatelessWidget {
 
   const CustomContainerListView({super.key, });
 
- static  List<InfoContainerModel> info = [
-    InfoContainerModel(
-        title: "20% OFF DURING THE RAMZAN",
-        bigBackgroundColor: AppColors.container1Background,
-        smallBackgroundColor: AppColors.getNow1Background,
-    ),
-   InfoContainerModel(
-     title: "40% OFF BLACK FRIDAY",
-     bigBackgroundColor: AppColors.container2Background,
-     smallBackgroundColor: AppColors.getNow2Background,
-   ),
-   InfoContainerModel(
-     title: "40% OFF CHRISTMAS",
-     bigBackgroundColor: AppColors.container3Background,
-     smallBackgroundColor: AppColors.getNow3Background,
-   ),
-
-  ];
-
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
       scrollDirection: Axis.horizontal,
-      itemCount: info.length,
+      itemCount: infoContainerModel.length,
       itemBuilder: (context,index){
         return Padding(
           padding:  EdgeInsets.only(right: 19.w),
@@ -39,18 +21,18 @@ class CustomContainerListView extends StatelessWidget {
             width: 285.w,
                 decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(23.r),
-                color: info[index].bigBackgroundColor
+                color: infoContainerModel[index].bigBackgroundColor
             ),child: Padding(
             padding:  EdgeInsets.symmetric(horizontal: 19.w),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(info[index].title,maxLines:2 ,overflow: TextOverflow.ellipsis, style: AppTextStyles.font16,),
+                Text(infoContainerModel[index].title,maxLines:2 ,overflow: TextOverflow.ellipsis, style: AppTextStyles.font16,),
                 Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(17.65.r),
-                    color: info[index].smallBackgroundColor,
+                    color: infoContainerModel[index].smallBackgroundColor,
                   ),
                   child: Padding(
                     padding:  EdgeInsets.symmetric(horizontal: 10.w,vertical: 8.h),

@@ -1,6 +1,8 @@
 import 'package:commerce_app/core/models/app_colors.dart';
 import 'package:commerce_app/features/cart/ui/cart_screen.dart';
+import 'package:commerce_app/features/favourite/ui/favourite_screen.dart';
 import 'package:commerce_app/features/home/ui/home_screen.dart';
+import 'package:commerce_app/features/profile/ui/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -16,7 +18,9 @@ class _BottomNavigationBarScreenState extends State<BottomNavigationBarScreen> {
 
   List<Widget> screens =[
     HomeScreen(),
-    CartScreen()
+    CartScreen(),
+    FavouriteScreen(),
+    ProfileScreen(),
   ];
   @override
   Widget build(BuildContext context) {

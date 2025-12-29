@@ -29,3 +29,18 @@ class InfoContainerModel{
   ),
 
 ];
+
+
+
+  // if list comes from api or firebase
+  /* factory InfoContainerModel.fromJson(Map<String, dynamic> json) {
+    return InfoContainerModel(
+      title: json['title'],
+      bigBackgroundColor: Color(int.parse(json['bigBackgroundColor'])),
+      smallBackgroundColor: Color(int.parse(json['smallBackgroundColor'])),
+    );
+  }
+}
+
+   */
+

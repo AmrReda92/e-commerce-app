@@ -2,7 +2,6 @@ import 'package:commerce_app/features/home/model/info_category_model.dart';
 import 'package:commerce_app/features/home/model/info_container_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../../core/models/app_colors.dart';
 import '../../../core/models/app_text_styles.dart';
 
 class CustomContainerListView extends StatelessWidget {

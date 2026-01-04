@@ -1,17 +1,20 @@
-import 'package:commerce_app/core/models/app_colors.dart';
-import 'package:commerce_app/core/models/app_images.dart';
 import 'package:commerce_app/core/models/app_text_styles.dart';
-import 'package:commerce_app/features/home/model/info_category_model.dart';
 import 'package:commerce_app/features/home/widgets/custom_categry_list_view.dart';
-import 'package:commerce_app/features/home/widgets/custom_container_list_view.dart';
+import 'package:commerce_app/features/home/widgets/list_view_carouse.dart';
 import 'package:commerce_app/features/home/widgets/custom_search_field.dart';
 import 'package:commerce_app/features/home/widgets/product_list_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  int selectedIndex=0;
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +42,7 @@ class HomeScreen extends StatelessWidget {
                   children: [
                     SizedBox(
                         height: 130.h,
-                        child: CustomContainerListView()
+                        child: ListViewCarouse()
                       ),
                     SizedBox(height: 24.h,),
                     Padding(
@@ -53,9 +56,13 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: 33.h,),
-                    SizedBox(
-                      height: 62.h,
-                      child: CustomCategoryListView(),
+                    CustomCategoryListView(
+                      selectedIndex : selectedIndex,
+                      onTapItem: (index){
+                        setState(() {
+                          selectedIndex=index;
+                        });
+                      },
                     ),
                     SizedBox(height: 33.45.h,),
                     ProductListView()
